@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="scripts/materialize.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="contents/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="contents/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="contents/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="contents/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="contents/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="contents/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="contents/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="contents/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="contents/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="contents/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="contents/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="contents/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="contents/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+            <nav class="top-nav center-align valign-wrapper amber darken-3">
+                <div class="container">
+                    <h1>Tic Tac Toe</h1>
+                </div>
+            </nav>
+        <main>
+            <div class="container">
+                <div id="info">
+                    <div id="start" class="section">
+                        <p class="btn wide pulse deep-orange lighten-1 left-align hoverable"><i class="material-icons large left">add</i> START THE GAME</p>   
+                    </div>
+                    <ul class="collapsible collapsible-accordion hoverable" data-collapsible="accordion">
+                        <li>
+                            <div id="player" class="collapsible-header teal lighten-1 white-text deep-orange lighten-3 pulse">
+                                <i class="material-icons left">person</i> CHOOSE A PLAYER
+                            </div>
+                            <div class="collapsible-body white">
+                                <a at="first" class=" valign-wrapper btn-flat wide" onclick="selection(this);"><i class="material-icons">clear</i> PLAYER 1</a>
+                            </div>
+                            <div class="collapsible-body valign-wrapper white">
+                               <a at="second" class="btn-flat valign-wrapper wide" onclick="selection(this);"> <i class="material-icons" > radio_button_unchecked</i>  PLAYER 2</a>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+    
+                    <div id="playGround" class=" valign-wrapper white">
+                           <table class="table center" id="fields">
+                                <tbody>
+                                    <tr>
+                                        <td id="field11" onclick="action(this);"></td>
+                                        <td id="field21" onclick="action(this);"></td>
+                                        <td id="field31" onclick="action(this);"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="field12" onclick="action(this);"></td>
+                                        <td id="field22" onclick="action(this);"></td>
+                                        <td id="field32" onclick="action(this);"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="field13" onclick="action(this);"></td>
+                                        <td id="field23" onclick="action(this);"></td>
+                                        <td id="field33" onclick="action(this);"></td>
+                                    </tr>
+                               </tbody>
+                            </table>
+                        </div>
+                    <div id="results" class="z-index-1 deep-orange center-align white-text hide">
+                        <h2>WINNER: </h2><br>
+                    </div>
+            </div>
+        
+        
+        </main>
+        <footer class="page-footer fixed">
+            <div class="container white-text center-align flow-textr">
+                Coded by Kasia &copy; 2017 
+            </div>
+        </footer>
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/materialize.js"></script>
+        <script src="script.js" type="text/javascript"></script>   
+    </body>
+</html>
+
